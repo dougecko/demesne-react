@@ -1,0 +1,24 @@
+.Monster {
+  background-color: cyan;
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  color: blue;
+}
+
+.Icon {
+  order: 1;
+  flex-grow: 1;
+  max-width: 100px;
+  border: 1px black solid;
+}
+
+.Name {
+  order: 2;
+  flex-grow: 2;
+  border: 1px black solid;
+  text-align: left;
+  padding-left: 1em;
+}

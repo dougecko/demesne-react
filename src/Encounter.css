@@ -1,0 +1,26 @@
+.Encounter {
+  background-color: greenyellow;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  display: flex;
+}
+
+.Map {
+  order: 1;
+  flex-grow: 2;
+  border: 1px black solid;
+  min-height: 80vh;
+}
+
+.Monsters {
+  order: 2;
+  flex-grow: 1;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+}
