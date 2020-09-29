@@ -16,8 +16,9 @@ class Encounter extends React.Component {
             This is the encounter component.<br/>
             Details of monsters and NPCs display here.
           </p>
-          <Monster name="Beholder" link="beholder"/>
-          <Monster/>
+          {/* <Monster name="Aboleth" link="aboleth"/> */}
+          <Monster name="Acolyte" link="acolyte"/>
+          {/* <Monster name="Beholder" link="beholder"/> */}
         </div>
       </div>
     );
