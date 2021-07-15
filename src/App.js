@@ -16,7 +16,7 @@ function App() {
         </div>
         <div className="App-title">
           <h1>Demesne</h1>
-          <p><em>An RPG encounter builder for D&amp;D 5e</em></p>
+          <p><em>Mustering many mighty monsters.</em></p>
         </div>
         <div className="App-nav">
           <p className="nav">{data.title}</p>
