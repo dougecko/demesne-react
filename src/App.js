@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './d20.png';
 import './App.css';
 // import Encounter from './Encounter.js';
+import PersonComponent from './PersonComponent.js';
 import Campaign from './model/data.js';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <div className="App-header">
         <div className="App-logo">
-          <img className="logo" src={logo} alt="Logo"/>
+          <img className="logo" src={logo} alt="Logo" />
         </div>
         <div className="App-title">
           <h1>Demesne</h1>
@@ -24,6 +25,7 @@ function App() {
         </div>
       </div>
       <div className="App-main">
+        {<PersonComponent />}
         {/* <Encounter /> */}
         <button onClick={save}>Save</button>
       </div>
