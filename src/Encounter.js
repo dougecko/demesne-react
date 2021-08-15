@@ -2,7 +2,7 @@ import React from 'react';
 import './Encounter.css';
 import Monster from './Monster.js';
 
-class Encounter extends React.Component {
+export default class Encounter extends React.Component {
   render() { 
     return (
       <div className="Encounter">
@@ -24,5 +24,3 @@ class Encounter extends React.Component {
     );
   }
 }
-
-export default Encounter;

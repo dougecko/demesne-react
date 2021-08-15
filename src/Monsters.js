@@ -1,9 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
-import constants from './Constants';
 
-export default class PersonComponent extends React.Component {
-
+export default class MonstersComponent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -26,13 +24,13 @@ export default class PersonComponent extends React.Component {
   }
 
   fetch() {
-    var component = this;
-
+    var context = this;
+  
     $.ajax({
-      url: constants.basePath + 'person',
+      url: this.context.basepath + 'person',
       method: 'GET',
-      success: function (response) {
-        component.setState({
+      success: function(response) {
+        context.setState({
           firstName: response.firstName,
           lastName: response.lastName
         });

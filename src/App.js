@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './d20.png';
+import logo from './resource/d20.png';
 import './App.css';
 // import Encounter from './Encounter.js';
 import PersonComponent from './PersonComponent.js';
 import Campaign from './model/data.js';
+import constants from './Constants';
 
-function App() {
+export default function App() {
   var save = Campaign.save;
   var data = Campaign.data();
 
@@ -25,12 +26,14 @@ function App() {
         </div>
       </div>
       <div className="App-main">
+        <p>Person</p>
         {<PersonComponent />}
         {/* <Encounter /> */}
         <button onClick={save}>Save</button>
       </div>
+      <div className="App-footer">
+        <p>NodeJS basePath = {constants.basePath}</p>
+      </div>
     </div>
   );
 }
-
-export default App;
