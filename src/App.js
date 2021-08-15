@@ -3,6 +3,7 @@ import logo from './resource/d20.png';
 import './App.css';
 // import Encounter from './Encounter.js';
 import PersonComponent from './PersonComponent.js';
+import MonsterComponent from './MonsterComponent.js';
 import Campaign from './model/data.js';
 import constants from './Constants';
 
@@ -26,8 +27,8 @@ export default function App() {
         </div>
       </div>
       <div className="App-main">
-        <p>Person</p>
         {<PersonComponent />}
+        {<MonsterComponent />}
         {/* <Encounter /> */}
         <button onClick={save}>Save</button>
       </div>
